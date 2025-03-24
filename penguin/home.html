@@ -30,21 +30,34 @@
 
 <main class="container mx-auto flex-grow px-6 mt-24">
 
-
-    <section id="welcome" class="fade-out py-24 text-center">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-5xl font-bold text-gray-800 mb-8">
+    <section id="welcome" class="relative w-full h-screen overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full z-0">
+            <iframe
+                class="w-full h-full"
+                src="https://www.youtube.com/embed/Y7cpCDlRfV0?autoplay=1&mute=1&controls=0&loop=1&playlist=Y7cpCDlRfV0&modestbranding=1&showinfo=0"
+                title="Penguin Welcome Video"
+                frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowfullscreen
+            ></iframe>
+        </div>
+        <div class="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+        <div class="relative z-20 flex flex-col justify-center items-center text-center h-full px-4">
+            <h1 class="text-5xl md:text-7xl font-bold text-white drop-shadow-lg">
                 Welcome to Penguin Sales & Services Company
-            </h2>
-            <p class="text-2xl text-gray-600">
-                Looking for a reliable and hassle-free service provider? You’ve come to the right place! At Penguin Sales & Services Company, we make things easy—whether you need a luxury bridal car, heavy equipment rentals, or auto parts to keep your business running smoothly.
-                <br><br>
-                We’re all about quality, efficiency, and customer satisfaction. No gimmicks, just straightforward, dependable service that gets the job done.
-                <br><br>
-                Let’s make things happen—choose Penguin today!
+            </h1>
+            <p class="mt-6 text-lg md:text-2xl text-gray-200 max-w-3xl drop-shadow-lg">
+                Reliable. Hassle-Free. Straightforward services you can count on. Whether it's luxury bridal cars, heavy equipment rentals, or top-quality auto parts, we’ve got you covered.
             </p>
+            <p class="mt-4 text-lg md:text-2xl text-gray-200 max-w-3xl drop-shadow-lg">
+                Choose Penguin—where quality meets trust.
+            </p>
+            <a href="#services" class="mt-8 inline-block bg-yellow-500 hover:bg-yellow-600 text-white text-lg px-8 py-3 rounded-lg shadow-lg transition">
+                Explore Our Services
+            </a>
         </div>
     </section>
+    
 </main>
 
 
