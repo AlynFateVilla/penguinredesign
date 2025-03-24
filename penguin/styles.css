@@ -1,19 +1,16 @@
-/* Reset some default styles */
 body, h1, h2, h3, p, ul, li, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and overall page styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
 }
 
-/* Header styling */
 header {
-    background-color: #1E40AF; /* Change header color */
+    background-color: #1E40AF;
     color: white;
     padding: 16px 0;
     position: fixed;
@@ -43,7 +40,6 @@ header a {
     font-weight: bold;
 }
 
-/* Navigation menu */
 header ul {
     display: flex;
     gap: 20px;
@@ -62,9 +58,8 @@ header ul li a {
     display: block;
 }
 
-/* Dropdown menu styling */
 header ul li > ul {
-    display: none; /* Hidden by default */
+    display: none; 
     position: absolute;
     top: 100%;
     left: 0;
@@ -73,14 +68,13 @@ header ul li > ul {
     border: 1px solid #ddd;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 10px 0;
-    z-index: 100; /* Makes sure dropdown stays on top */
+    z-index: 100; 
 }
 
 header ul li:hover > ul {
-    display: block; /* Show the dropdown on hover */
+    display: block; 
 }
 
-/* Dropdown items */
 header ul li > ul li {
     width: 100%;
 }
@@ -98,9 +92,8 @@ header ul li > ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main content styling */
 main {
-    padding: 100px 20px 20px 20px; /* Push down the content to make space for the fixed header */
+    padding: 100px 20px 20px 20px;
     text-align: center;
 }
 
@@ -111,7 +104,6 @@ main {
     border-radius: 8px;
 }
 
-/* Image Grid Styling */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -119,7 +111,6 @@ main {
     margin-top: 30px;
 }
 
-/* Footer Styling */
 footer {
     background-color: #333;
     color: white;
@@ -131,3 +122,7 @@ footer {
 footer p {
     font-size: 14px;
 }
+main {
+    padding-top: 140px; 
+  }
+  
